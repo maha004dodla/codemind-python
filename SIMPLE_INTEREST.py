@@ -1,3 +1,3 @@
-p,t,r= [int(x) for x in input().split()]
-b=p*t*r//100
-print(b)
+p,t,r=[int(p) for p in input().split()]
+s=p*t*r//100
+print(s)
