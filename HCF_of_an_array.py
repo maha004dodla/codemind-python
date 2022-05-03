@@ -1,0 +1,12 @@
+n=int(input())
+arr=list(map(int,input().split()))
+gcd=arr[0]
+j=1
+i=0
+while(j<n):
+	if(arr[j]%gcd==0):
+	    j=j+1
+	else:
+		gcd=arr[j]%gcd
+		i=i+1
+print(gcd)
