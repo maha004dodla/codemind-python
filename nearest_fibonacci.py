@@ -1,0 +1,13 @@
+a,b=1,1
+n=int(input())
+c=1
+while(c<=n):
+    c=a+b
+    a=b
+    b=c
+if(n-a<c-n):
+    print(a)
+elif(n-a==c-n):
+    print(a,c)
+else:
+    print(c)
