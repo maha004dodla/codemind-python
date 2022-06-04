@@ -1,0 +1,13 @@
+s=input()
+str=0
+x,y=0,0
+while(str<len(s)):
+    if(s[str]=='z'):
+        x=x+1
+    else:
+        y=y+1
+    str=str+1
+if(2*x==y):
+    print("Yes")
+else:
+    print("No")
