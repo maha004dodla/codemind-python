@@ -1,0 +1,7 @@
+s=input()
+str=s.lower()
+str=str.replace(" ","")
+a=set(str)
+b=list(a)
+c=sorted(b)
+print("".join(c))
