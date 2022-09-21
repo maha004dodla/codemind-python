@@ -1,0 +1,12 @@
+a=input()
+b=input()
+a=a.lower()
+b=b.lower()
+c=sorted(a)
+d=sorted(b)
+m="".join(c)
+n="".join(d)
+if(m==n):
+    print("True")
+else:
+    print("False")
