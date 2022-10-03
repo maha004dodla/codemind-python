@@ -1,9 +1,11 @@
 s=input()
-c=0
+s=s.split()
+a=[]
 for i in s:
-    if i in "aeiouAEIOU":
-        c=c+1
-    if(i==" "):
-        print(c,end=" ")
-        c=0
-print(c)
+    c=0
+    for j in i:
+        if j in"aeiouAEIOU":
+            c=c+1
+    a.append(c)
+print(*a)
+        
