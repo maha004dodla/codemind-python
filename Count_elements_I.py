@@ -1,13 +1,12 @@
-n,m=map(int,input().split())
-a=list(map(int,input().split()))
-b=list(map(int,input().split()))
-count=0
-for i in range(n):
-    c=0
-    for j in range(m):
-        if(a[i]==b[j]):
-            b[j]=0
-            c=c+1
-    if(c!=0):
-        count=count+1
-print(count)
+a,b=map(int,input().split())
+arr=list(map(int,input().split()))
+brr=list(map(int,input().split()))
+arr=set(arr)
+brr=set(brr)
+m=sorted(list(arr))
+n=sorted(list(brr))
+c=0
+for i in m:
+    if i in n:
+        c+=1
+print(c)
