@@ -1,12 +1,19 @@
-n=int(input())
-l=[0,0,0,0,0,0,0,0,0,0]
-while n:
+N=int(input())
+n=N
+l=[]
+m=[]
+while(n!=0):
     r=n%10
-    l[r]=l[r]+1
+    l.append(r)
     n=n//10
 for i in l:
-    if i>1:
-        print("Not Unique Number")
-        break
-else:
+    a=l.count(i)
+    m.append(a)
+c=0
+for i in m:
+    if(i==1):
+        c+=1
+if(c==len(str(N))):
     print("Unique Number")
+else:
+    print("Not Unique Number")
