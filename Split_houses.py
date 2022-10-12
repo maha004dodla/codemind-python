@@ -1,0 +1,9 @@
+n=int(input())
+a=input()
+b=a.count(".")
+if(b>(n//2)):
+    c=a.replace(".","B")
+    print("YES")
+    print(c)
+else:
+    print("NO")
