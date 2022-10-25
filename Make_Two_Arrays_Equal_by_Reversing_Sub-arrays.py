@@ -1,0 +1,10 @@
+n=int(input())
+a=list(map(int,input().split()))
+m=int(input())
+b=list(map(int,input().split()))
+A=sorted(a)
+B=sorted(b)
+if(A==B):
+    print(True)
+else:
+    print(False)
