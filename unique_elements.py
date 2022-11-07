@@ -1,7 +1,8 @@
 n=int(input())
-l=list(map(int,input().split()))
-k=[]
-for i in l:
-    if i not in k:
-        k.append(i)
-print(*k)
+arr=list(map(int,input().split()))
+c=[]
+for i in arr:
+    b=arr.count(i)
+    if(i not in c):
+        c.append(i)
+print(*c)
