@@ -1,17 +1,18 @@
-s=input()
-s1=input()
-s=list(s.lower())
-s1=list(s1.lower())
-a=[]
-b=[]
-flag=0
-for i in s:
-    if i not in s1 and (i!=' '):
-            a.append(i)
-for i in s1:
-    if i not in s and (i!=' '):
-            a.append(i)
+a=input()
+b=input()
+a=a.lower()
+b=b.lower()
+a=list(a)
+b=list(b)
+l=[]
+k=[]
 for i in a:
-    if i not in b:
-        b.append(i)
-print(len(b))
+    if i not in b and i!=" ":
+        l.append(i)
+for i in b:
+    if i not in a and i!=" ":
+        l.append(i)
+for i in l:
+    if i not in k:
+        k.append(i)
+print(len(k))
