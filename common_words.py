@@ -1,12 +1,11 @@
-s=input()
-s1=input()
-s=s.lower()
-s1=s1.lower()
-s=s.split(" ")
-s1=s1.split(" ")
-a=[]
-for i in s1:
-    if i in s:
-        if i not in a:
-            a.append(i)
-print(*a)
+a=input()
+b=input()
+a=a.lower()
+b=b.lower()
+a=a.split(" ")
+b=b.split(" ")
+l=[]
+for i in b:
+    if i in a:
+        l.append(i)
+print(*l)
