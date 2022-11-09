@@ -1,11 +1,12 @@
 s=input()
-s=s.replace(" ","")
 s=s.lower()
-s1=""
+s=s.replace(" ","")
+s=list(s)
+l=""
 for i in s:
     a=s.count(i)
     if(a==1):
-        s1+=i
-b=sorted(s1)
+        l+=i
+b=sorted(l)
 c="".join(b)
 print(c)
