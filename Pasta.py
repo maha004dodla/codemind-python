@@ -10,4 +10,3 @@ if(c==m):
     print("Yes")
 else:
     print("No")
-        
