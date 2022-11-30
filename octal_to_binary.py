@@ -1,0 +1,6 @@
+n=int(input())
+n=str(n)
+a=int(n,8)
+b=bin(a)
+c=b.replace("0b","")
+print(c)
