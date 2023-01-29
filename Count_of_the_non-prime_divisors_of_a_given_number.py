@@ -1,12 +1,21 @@
+import math
+def prime(p):
+    if(p==1):
+        return 0
+    for i in range(2,int(math.sqrt(p)+1)):
+        if(p%i==0):
+            return 0
+    else:
+        return 1
 n=int(input())
-sum=0
+l=[]
+m=[]
+c=0
 for i in range(1,n+1):
     if(n%i==0):
-        if i>=1:
-            count=0
-            for j in range(2,i):
-                if(i%j==0):
-                    count=count+1
-            if(count!=0):
-                sum=sum+1
-print(sum+1)
+        l.append(i)
+for i in range(len(l)):
+    if(prime(l[i])):
+        m.append(l[i])
+        c+=1
+print(len(l)-c)
